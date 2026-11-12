@@ -1,0 +1,36 @@
+#Exercício 1: Verificação de Número Positivo
+#Escreva um programa em Python que solicite ao usuário um número inteiro e verifique 
+#se o número é positivo, negativo ou zero. 
+
+#Em seguida, exiba uma mensagem apropriada de acordo 
+#com o resultado da verificação.
+
+numero = int(input('Escolha um numero inteiro: '))
+
+if numero > 0:
+   print('numero positivo')
+elif numero == 0 :
+       print('numero é zero')
+else: 
+   print('numero negativo') 
+****************************************************************************************************************
+# Exercício 2: Classificação de Triângulos
+# Escreva um programa em Python que receba três comprimentos de 
+# lados de um triângulo e determine se o triângulo é equilátero, 
+# isósceles ou escaleno.
+lado1 = int(input('escolha um nume para ser o primeiro lado: '))
+lado2 = int(input('escolha um nume para ser o segundo lado: '))
+lado3 = int(input('escolha um nume para ser o terceiro lado: '))
+if lado1 == lado2 == lado3: 
+     print ('triangulo equilatero')
+elif lado1 == lado2 != lado3 or lado1 == lado3 != lado2 or lado1 != lado2 == lado3:
+     print ('triangolo isoceles')
+else:
+     print ('triangulo escaleno')
+*****************************************************************************************************************
+# Exercício 3: Verifique se o usuário é maior de idade e pode entrar no show, escreva 
+# um programa que peça a usuário a idade e decida se ele pode entrar no show.
+idade = int(input('qual é a sua idade: '))
+if idade >= 18:
+    print ('pode entrar no show')
+else: print('não pode entrar no show')
